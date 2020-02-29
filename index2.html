@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+Css+Bootstrap4 2020/2/26練習</title>
+    <style>
+        body {
+            font-family: Microsoft Jhenghei;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com.tw">Google</a></li>
+            <li><a href="https://www.yahoo.com.tw">Yahoo</a></li>
+            <li><a href="#">連結到網頁本身</a></li>
+            <!-- #為連結到網頁本身，也就是不連結到任何頁面-->
+        </ul>
+    </nav>
+
+    <table>
+        <tr>
+            <td>店家</td>
+            <td>產品名稱</td>
+            <td>價錢</td>
+        </tr>
+        <tr>
+            <td>依品茶館</td>
+            <td>珍珠奶茶</td>
+            <td>50元</td>
+        </tr>
+        <tr>
+            <td>茶塘飲料店</td>
+            <td>珍珠綠茶</td>
+            <td>55元</td>
+        </tr>
+    </table>
+    <!--雖然說在中文裡直的稱行，橫的稱列，不過歐美國家正好相反，行(row)是橫的，列(Column)是直的。-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>課程</th>
+                <th>分數</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>國語</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>數學</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>自然</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>總分</td>
+                <td>265</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form action="form_action.php" method="GET">
+        <!--action屬性為設定表單資訊會向何處發送 而method則是傳送的方法-->
+        <h1>基本資料</h1>
+        <label for="myname">姓名</label>
+        <!--for屬性為綁定作用 使label與特定元素進行綁定 所以設定值須為特定元素的ID名稱-->
+        <input type="text" id="myname" name="myname">
+        <br>
+        <br>
+        <label for="grade">年級</label>
+        <select id="grade">
+            <!--select為下拉式選單 要與option配合著使用-->
+            <option value="一年級">一年級</option>
+            <option value="二年級">二年級</option>
+            <option value="三年級">三年級</option>
+            <option value="四年級">四年級</option>
+            <option value="五年級">五年級</option>
+            <option value="六年級">六年級</option>
+        </select>
+        <br>
+        <br>
+        <p>性別</p>
+        <label for="male">男</label>
+        <input type="radio" id="male" name="sex">
+        <!--type="radio"為設定成單選按鈕-->
+        <label for="female">女</label>
+        <input type="radio" id="female" name="sex">
+        <br>
+        <br>
+        <label for="remarks">備註</label>
+        <br>
+        <textarea rows="4" id="remarks"></textarea>
+        <!--rows為設定textarea的外框高度為4行(rows)-->
+        <br>
+        <br>
+        <input type="submit" value="送出">
+        <!--type屬性設定為submit用於定義為提交按鈕 點擊提交按鈕會把表單資料送到伺服器 value屬性則是按鈕顯示的文字內容-->
+    </form>
+    <br>
+    <br>
+    <img src="https://fakeimg.pl/600x600/">
+    <audio controls>
+        <source src="source/exsample.ogg">
+        <source src="source/exsample.mp3">
+    </audio>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!--方法1-->
+    <script type="text/javascript">
+        // JS
+    </script>
+    <!--方法2-->
+
+    <div class="a b" style="background-color: red; height:100px; width: 100px;"></div>
+    <div id="a" style="background-color: seagreen; height:100px; width: 100px;"></div>
+    <div hidden="hidden">元素隱藏</div>
+    <div>元素沒有隱藏</div>
+    <div>沒有使用style靠右對齊</div>
+    <div style="float:right">有使用style靠右對齊</div>
+    <p title="哈囉 title屬性可以在滑鼠移動到該元素時,顯示特定文字內容">請移到我身上</p>
+    <p lang="zh-tw">歡迎</p>
+    <!--lang屬性可以定義該元素所使用的語言-->
+
+</body>
+
+</html>
