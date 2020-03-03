@@ -18,13 +18,41 @@
             text-align: center;
         }
 
-        p, h1{
+        p,
+        h1 {
             color: blue;
         }
-        footer p{
+
+        footer p {
             font-size: 30px;
             color: red;
         }
+
+        h2>span {
+            color: salmon;
+        }
+
+        a:link {
+            /*滑鼠未點擊連結前的樣式*/
+            color: white;
+        }
+
+        a:visited {
+            /*滑鼠點擊連結後的樣式*/
+            color: cyan;
+        }
+
+        a:hover {
+            /*滑鼠移到連結時的樣式*/
+            color: coral;
+        }
+
+        a:active {
+            /*滑鼠按下時的樣式*/
+            color: black;
+        }
+
+        /*要按照以上link visited hover active的屬性排序來設定,否則將無法成功顯示樣式效果*/
     </style>
 </head>
 
@@ -40,6 +68,12 @@
         <p>footer裡的另一個p元素</p>
         <p>後代選擇器會指定元素裡的所有子元素,因此在此範例中footer裡的三個p元素都設定到css樣式了</p>
     </footer>
+    <h2>1heloo,<span>world</span></h2>
+    <h2>2heloo,<em><span>world</span></em></h2>
+    <!--子選擇器-指定某個元素的子元素做變化,但不包括子元素的子元素
+        在這裡由於是先包含em元素接著才是span元素,所以對h2來說span元素是他的子元素的子元素,因此不會套用到CSS樣式-->
+    <h2>3heloo,<strong><span>world</span></strong></h2>
+    <a href="https://www.google.com.tw">連結到google</a>
 </body>
 
 </html>
