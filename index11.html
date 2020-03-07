@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+Css+Bootstrap4 2020/3/04練習</title>
+    <style>
+        body {
+            font-family: microsoft jhenghei;
+        }
+
+        div {
+            background-color: gold;
+            width: 100px;
+            height: 100px;
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+            /*向右旋轉45度 很像都只能向右轉 所以要向左轉就要用360去減角度 譬如要左轉45 就用360-45=315 接著再設定315deg 如此一來便可以變成向左轉45度*/
+        }
+
+        .scale {
+            transform: scale(0.5);
+        }
+
+        .translate {
+            transform: translate(150px, 50px);
+        }
+
+        .skewx {
+            transform: skewX(20deg);
+        }
+
+        .skewy {
+            transform: skewY(20deg);
+        }
+
+        .skewxy {
+            transform: skew(20deg, 20deg);
+        }
+
+        .transition {
+            width: 10px;
+            height: 30px;
+            background-color: red;
+            transition: width 10s;
+        }
+
+        .transition:hover {
+            width: 1000px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate">旋轉45度</div>
+    <br><br>
+    <div>沒有縮放</div>
+    <div class="scale">縮放0.5倍</div>
+    <br><br>
+    <div>沒有位移</div>
+    <div class="translate">向x正向位移150px,向y負向位移50px</div>
+    <!--會根據原本應出現的位置去進行位移-->
+    <br><br>
+    <div class="skewx">向x傾斜20度</div>
+    <br><br>
+    <div class="skewy">向y傾斜20度</div>
+    <br><br>
+    <div class="skewxy">向x傾斜20度 向y傾斜20度</div>
+    <br><br><br><br><br><br>
+    <div class="transition">載入</div>
+</body>
+
+</html>

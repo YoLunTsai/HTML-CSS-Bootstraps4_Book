@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+Css+Bootstrap4 2020/3/07練習</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            text-align: center;
+            border: 3px solid #000;
+            color: white;
+        }
+
+        #static {
+            background-color: blue;
+            height: 400px;
+            width: 500px;
+            line-height: 400px;
+            position: static;
+        }
+
+        #absolute {
+            width: 180px;
+            height: 180px;
+            background-color: red;
+            position: absolute;
+            top: 220px;
+            left: 320px;
+            line-height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="static">
+        我是不可定位的父元素
+        <div id="absolute">我的父元素不可定位 所以我會依據body元素來定位(左上角)</div>
+    </div>
+</body>
+
+</html>
