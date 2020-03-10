@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: beige;
+    font-family: microsoft jhenghei;
+}
+
+#wrapper {
+    margin: 0px auto;
+    /*設定上下外距為0px，左右外距為auto，以此來讓元素呈現水平置中*/
+    width: 1024px;
+}
+
+#logo {}
+
+#logo img {
+    width: 100%;
+}
+
+nav {
+    background-color: #B63D32;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ffc90e;
+}
+
+#content_in {
+    padding: 30px 50px;
+    text-align: center;
+    background-color: #f4f4ed;
+}
+
+#content_in h1 {
+    color: #b63d32;
+    margin-bottom: 10px;
+}
+
+#content_in p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#content_in a {
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;
+    text-decoration: none;
+    background-color: #b63d32;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #71552a;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 10px 0px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    li a {
+        padding: 10px;
+    }
+}
