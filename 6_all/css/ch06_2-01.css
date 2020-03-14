@@ -1,0 +1,11 @@
+.col-1 {
+    background-color: rosybrown;
+    border: 1px solid white;
+    height: 100px;
+}
+
+.col {
+    background-color: rosybrown;
+    border: 1px solid white;
+    height: 100px;
+}
