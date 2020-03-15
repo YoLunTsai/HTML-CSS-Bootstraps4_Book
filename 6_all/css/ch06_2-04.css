@@ -1,0 +1,15 @@
+.col-sm-6 {
+    background-color: darkcyan;
+    height: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.col-md{
+    background-color: darkcyan;
+    height: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    border: 1px solid white;
+}
