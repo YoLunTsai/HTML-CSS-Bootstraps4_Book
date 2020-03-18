@@ -1,0 +1,13 @@
+.row {
+    background-color: #8acfbb;
+}
+
+
+
+.col-4 {
+    height: 100px;
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid white;
+}

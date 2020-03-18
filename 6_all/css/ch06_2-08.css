@@ -1,0 +1,23 @@
+.col {
+    height: 100px;
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.col-4 {
+    height: 100px;
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.col-6 {
+    height: 100px;
+    background-color: darkcyan;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid white;
+}
